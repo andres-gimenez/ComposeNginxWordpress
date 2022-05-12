@@ -55,7 +55,7 @@ services:
       - wordpressdb:/var/lib/mysql
    
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin:5.0.4
     container_name: ${APP_NAME}-phpmyadmin
     volumes:
       - ./config/phpmyadmin.ini:/usr/local/etc/php/conf.d/phpmyadmin.ini
